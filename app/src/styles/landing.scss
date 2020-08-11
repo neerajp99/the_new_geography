@@ -1,0 +1,80 @@
+.landing {
+  // height: 50vh;
+  height: calc(var(--vh, 1vh) * 100);
+  background-color: white;
+  width: 100%;
+  .row {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: row;
+    @include media("<=tablet") {
+      flex-direction: column;
+    }
+    @include media("<=phone") {
+      flex-direction: column;
+    }
+    .landing_content {
+      width: 40%;
+      left: 0;
+      @include media("<=tablet") {
+        width: 100%;
+        height: calc(var(--vh, 1vh) * 50);
+      }
+      @include media("<=phone") {
+        width: 100%;
+        height: calc(var(--vh, 1vh) * 50);
+      }
+      h2 {
+        font-size: 4rem;
+        line-height: 5.5rem;
+        font-weight: 700;
+        z-index: 10;
+        margin-top: 45%;
+        color: white;
+        mix-blend-mode: difference;
+        @include media("<=tablet") {
+          font-size: 2.4rem;
+          line-height: 3rem;
+        }
+        @include media("<=phone") {
+          margin-top: 72px;
+          font-size: 1.7rem;
+          line-height: 2.2rem;
+        }
+        // .line {
+        //   margin-bottom: 8px;
+        //   height: 56px;
+        //   position: relative;
+        //   overflow: hidden;
+        //   @include media("<=tablet") {
+        //     height: 48px;
+        //   }
+        //   @include media("<=phone") {
+        //     height: 32px;
+        //   }
+        //   span {
+        //     position: absolute;
+        //   }
+        // }
+      }
+      h3 {
+
+      }
+    }
+
+    .landing_images {
+      width: 60%;
+      right: 0;
+      background: black;
+      @include media("<=tablet") {
+        width: 100%;
+        height: calc(var(--vh, 1vh) * 50);
+      }
+      @include media("<=phone") {
+        width: 100%;
+        height: calc(var(--vh, 1vh) * 50);
+      }
+    }
+  }
+}
