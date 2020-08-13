@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
 @import "./styles/breakpoints.scss";
 @import "./styles/header.scss";
 @import "./styles/landing.scss";
@@ -16,17 +17,17 @@ html {
 }
 
 .container {
-  width: 1560px;
-  min-width: 1560px;
+  width: 90%;
+  min-width: 90%;
   margin: 0 auto;
   height: 100%;
   @include media("<=1560px") {
-    width: 1280px;
-    min-width: 1280px;
+    width: 95%;
+    min-width: 95%;
   }
   @include media("<=desktop") {
-    width: 1080px;
-    min-width: 1080px;
+    width: 100%;
+    min-width: 100%;
   }
   @include media("<=1080px") {
     width: 100%;
