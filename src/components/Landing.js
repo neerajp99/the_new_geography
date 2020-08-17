@@ -50,36 +50,36 @@ const Landing = () => {
                 <div className="images_flex">
                   <div className="images_flex_img_one">
                     <div className="artist_image">
-                      <img src={matt} className="artist_image_img" alt=""/>
+                      <img src={matt} className="artist_image_img" alt="" />
                     </div>
                   </div>
                 </div>
                 <div className="images_flex">
                   <div className="images_flex_img_two">
                     <div className="artist_image">
-                      <img src={tjeerd} className="artist_image_img" alt=""/>
+                      <img src={tjeerd} className="artist_image_img" alt="" />
                     </div>
                   </div>
                   <div className="images_flex_img_one">
                     <div className="artist_image">
-                      <img src={mario} className="artist_image_img" alt=""/>
+                      <img src={mario} className="artist_image_img" alt="" />
                     </div>
                   </div>
                 </div>
                 <div className="images_flex">
                   <div className="images_flex_img_one">
                     <div className="artist_image">
-                      <img src={kyle} className="artist_image_img" alt=""/>
+                      <img src={kyle} className="artist_image_img" alt="" />
                     </div>
                   </div>
                   <div className="images_flex_img_two">
                     <div className="artist_image">
-                      <img src={jarett} className="artist_image_img" alt=""/>
+                      <img src={jarett} className="artist_image_img" alt="" />
                     </div>
                   </div>
                   <div className="images_flex_img_one">
                     <div className="artist_image">
-                      <img src={roman} className="artist_image_img" alt=""/>
+                      <img src={roman} className="artist_image_img" alt="" />
                     </div>
                   </div>
                 </div>
@@ -91,17 +91,17 @@ const Landing = () => {
                   </div>
                   <div className="images_flex_img_one">
                     <div className="artist_image">
-                      <img src={tyler} className="artist_image_img" alt=""/>
+                      <img src={tyler} className="artist_image_img" alt="" />
                     </div>
                   </div>
                   <div className="images_flex_img_two">
                     <div className="artist_image">
-                      <img src={ghiora} className="artist_image_img" alt=""/>
+                      <img src={ghiora} className="artist_image_img" alt="" />
                     </div>
                   </div>
                   <div className="images_flex_img_one">
                     <div className="artist_image">
-                      <img src={patrick} className="artist_image_img" alt=""/>
+                      <img src={patrick} className="artist_image_img" alt="" />
                     </div>
                   </div>
                 </div>
@@ -116,7 +116,7 @@ const Landing = () => {
             <div className="about_content_part">
               <div className="about_content_part_top">
                 <FontAwesomeIcon
-                className="font-icon_1"
+                  className="font-icon_1"
                   icon={faLaptopCode}
                   id="font-icon"
                   aria-hidden="true"
@@ -124,10 +124,11 @@ const Landing = () => {
               </div>
               <div className="about_content_part_middle">Technical Aspects</div>
               <div className="about_content_part_bottom">
-                Every theme comes with the ability to match your or your
-                visitors preference and display as light or dark variants. Every
-                theme comes with the ability to match your or your visitors
-                preference and display as light or dark variants.
+                The science, technology, geometry and background to Artificial
+                Intelligence and Art. The study aims to reflect upon the works
+                of generative design, generative algorithm, Julia sets,
+                Mandelbrot sets and alot more. In addition, we explore various
+                definitions of creativity.
               </div>
             </div>
             <div className="about_content_part">
@@ -141,10 +142,12 @@ const Landing = () => {
               </div>
               <div className="about_content_part_middle">Philosopy</div>
               <div className="about_content_part_bottom">
-                Every theme comes with the ability to match your or your
-                visitors preference and display as light or dark variants. Every
-                theme comes with the ability to match your or your visitors
-                preference and display as light or dark variants.
+                This study involves an analysis and evaluation of how
+                philosophers would perceive AI Art and whether the AI art
+                movement mirrors the early 1900s Dada Movement. In addition, an
+                analysis of the industrial revolution and Futurist art leads us
+                to the reasoning of how AI art might have originated in the
+                first place.
               </div>
             </div>
           </div>
@@ -160,10 +163,13 @@ const Landing = () => {
               </div>
               <div className="about_content_part_middle">Economics</div>
               <div className="about_content_part_bottom">
-                Every theme comes with the ability to match your or your
-                visitors preference and display as light or dark variants. Every
-                theme comes with the ability to match your or your visitors
-                preference and display as light or dark variants.
+                A study of the market and Art collectors along with a behaviour
+                analysis of how people perceive art. And a comparative market
+                study between AI art and Non-Art markets. In addition, the
+                impacts on the Job market and the short run/long run
+                consequences of AI in the Art world have been made. And the
+                question of AI art being the next big Ghost work has been
+                evaluated.
               </div>
             </div>
             <div className="about_content_part">
@@ -177,10 +183,8 @@ const Landing = () => {
               </div>
               <div className="about_content_part_middle">Sociology</div>
               <div className="about_content_part_bottom">
-                Every theme comes with the ability to match your or your
-                visitors preference and display as light or dark variants. Every
-                theme comes with the ability to match your or your visitors
-                preference and display as light or dark variants.
+                A study of democratization of art and how AI art could make art
+                more accessible to various sectors of society.
               </div>
             </div>
             <div className="about_content_part">
@@ -196,10 +200,12 @@ const Landing = () => {
                 Interviews and Surveys
               </div>
               <div className="about_content_part_bottom">
-                Every theme comes with the ability to match your or your
-                visitors preference and display as light or dark variants. Every
-                theme comes with the ability to match your or your visitors
-                preference and display as light or dark variants.
+                Interviews with several AI and non-AI artists from across the
+                field of Art and Design have been conducted from the month from
+                July to August to evaluate the market, reflect upon technology
+                behind AI and what they feel about their work. In addition,
+                surveys across the University community were conducted to
+                ascertain certain psychological perceptions.
               </div>
             </div>
           </div>
@@ -208,7 +214,9 @@ const Landing = () => {
       <div className="demo">
         <h1>Check out our interviews</h1>
         <p>AI / Generative Artists and Musicians</p>
-        <Link to="/artists" className="interview_button">Check it out</Link>
+        <Link to="/artists" className="interview_button">
+          Check it out
+        </Link>
       </div>
       <Footer />
     </React.Fragment>
