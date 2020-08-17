@@ -12,6 +12,7 @@ import Footer from "./Footer";
 // Import interview
 import interview from "../utils/interviews/mario";
 
+// const interview = null
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100%"
@@ -29,9 +30,9 @@ function Interview() {
   let tl = new TimelineLite({ delay: 0.8 });
 
   useEffect(
-    () => {
-      console.log(interview);
-
+    props => {
+      // interview =
+      console.log(props);
       // Images Vars
       const girlImage = images.firstElementChild; // or children[0]
       const boyImage = images.lastElementChild;
@@ -91,24 +92,22 @@ function Interview() {
 
   const classes = useStyles();
   const la = Object.keys(interview[5].questions).map((key, index) => (
-      <React.StrictMode key={key}>
-        <Accordion>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-          >
-            <Typography className={classes.heading}>
-              {interview[5].questions[key]}
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              {interview[6].answers[key]}
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-      </React.StrictMode>
+    <React.StrictMode key={key}>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography className={classes.heading}>
+            {interview[5].questions[key]}
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>{interview[6].answers[key]}</Typography>
+        </AccordionDetails>
+      </Accordion>
+    </React.StrictMode>
   ));
   console.log(la);
   return (

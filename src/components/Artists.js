@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 import useWindowSize from "./hooks/useWindowSize";
 import matt from "../utils/img/matt2.png";
@@ -50,8 +51,8 @@ const surnames = [
 ];
 
 const onClickImage = () => {
-    console.log('clicked')
-}
+  console.log("clicked");
+};
 
 function Artists() {
   //Hook to grab window size
@@ -81,6 +82,18 @@ function Artists() {
     },
     [size.height]
   );
+  const use_names = [
+    "matt",
+    "mario",
+    "kyle",
+    "roman",
+    "tyler",
+    "patrick",
+    "jatin",
+    "ghiora",
+    "jarett",
+    ""
+  ];
 
   //Set the height of the body to the height of the scrolling div
   const setBodyHeight = () => {
@@ -103,11 +116,17 @@ function Artists() {
     const acceleration = difference / size.width;
     const velocity = +acceleration;
     const skew = velocity * 7.5;
+    // scrollContainer.current.style.transform = `translate3d(0, -${
+    //   data.rounded
+    // }px, 0) skewY(${skew}deg)`;
 
     //Assign skew and smooth scrolling to the scroll container
+    if (scrollContainer.current !== null) {
     scrollContainer.current.style.transform = `translate3d(0, -${
       data.rounded
-    }px, 0) skewY(${skew}deg)`;
+    }px, 0)  skewY(${skew}deg)`;
+}
+
 
     //loop vai raf
     requestAnimationFrame(() => skewScrolling());
@@ -117,16 +136,19 @@ function Artists() {
     <div ref={app} className="Artists">
       <div ref={scrollContainer} className="scroll">
         {images.map((image, index) => (
-          <React.Fragment key={index}>
+            <>
+          <Link to={`/interview/${use_names[index]}`}>
             <div key={index} className="img-container">
-              <img src={image} alt={`people ${index}`} onClick={onClickImage}/>
+              <img src={image} alt={`people ${index}`} onClick={onClickImage} />
             </div>
+            </Link>
             <h2>
               {names[index]} <span className="outline">{surnames[index]}</span>
             </h2>
-          </React.Fragment >
+          </>
         ))}
       </div>
+
     </div>
   );
 }

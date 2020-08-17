@@ -19,7 +19,7 @@ function App() {
         <Header />
         <Route exact path="/" component={Landing} />
         <Route exact path="/artists" component={Artists} />
-        <Route exact path="/interview" component={Interview} />
+        <Route exact path="/interview/:id" component={Interview} />
 
       </div>
     </Router>
