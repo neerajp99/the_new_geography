@@ -117,7 +117,6 @@ function Interview(props) {
       </Accordion>
     </React.StrictMode>
   ));
-  console.log(la);
   return (
     <div className="hero" ref={el => (app = el)}>
       <div className="container">

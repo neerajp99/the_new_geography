@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import matt from "../utils/img/matt2.png";
@@ -33,7 +33,7 @@ const names = [
   "Patrick",
   "Jatin",
   "Ghiora",
-  "Jarett",
+  "Jarrett",
   "Tjeerd"
 ];
 const surnames = [
@@ -50,12 +50,14 @@ const surnames = [
 ];
 
 function Artists() {
+  const { pathname } = useLocation();
 
-    const { pathname } = useLocation();
-
-     useEffect(() => {
-       window.scrollTo(0, 0);
-     }, [pathname]);
+  useEffect(
+    () => {
+      window.scrollTo(0, 0);
+    },
+    [pathname]
+  );
   const onClickImage = () => {
     // document.body.style.height = `${0}px`;
   };
