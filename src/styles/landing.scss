@@ -92,6 +92,7 @@
           @include media("<=phone") {
             position: relative;
             top: -3.8vh;
+            width: 255px;
           }
         }
         .all_button {
