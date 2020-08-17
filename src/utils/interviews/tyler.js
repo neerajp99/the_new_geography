@@ -20,7 +20,8 @@ const interview = [
   {
     questions: [
       `Has AI/autonomous systems ever surprised you to the core? Can you give one instance of when you were thoroughly shell shocked by the final output?`,
-      `Do you think that the viewership of AI art is really able to appreciate without understanding the technical effort behind the piece?`
+      `Do you think that the viewership of AI art is really able to appreciate without understanding the technical effort behind the piece?`,
+      `more123`
     ]
   },
   {

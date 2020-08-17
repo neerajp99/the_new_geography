@@ -9,7 +9,7 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Footer from "./Footer";
-import {useLocation} from 'react-router-dom'
+import { useLocation } from "react-router-dom";
 // Import interview
 // import interview from "../utils/interviews/mario";
 
@@ -101,20 +101,35 @@ function Interview(props) {
   const classes = useStyles();
   const la = Object.keys(interview[5].questions).map((key, index) => (
     <React.StrictMode key={key}>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography className={classes.heading}>
-            {interview[5].questions[key]}
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>{interview[6].answers[key]}</Typography>
-        </AccordionDetails>
-      </Accordion>
+      {interview[5].questions[key] !== "more123" && (
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography className={classes.heading}>
+              {interview[5].questions[key]}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>{interview[6].answers[key]}</Typography>
+          </AccordionDetails>
+        </Accordion>
+      )}
+      {interview[5].questions[key] === "more123" && (
+        <Accordion disabled>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel3a-content"
+            id="panel3a-header"
+          >
+            <Typography className={classes.heading}>
+              More information coming soon..
+            </Typography>
+          </AccordionSummary>
+        </Accordion>
+      )}
     </React.StrictMode>
   ));
   return (

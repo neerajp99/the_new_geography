@@ -20,7 +20,9 @@ const interview = [
   {
     questions: [
       `Has AI/autonomous systems ever surprised you to the core? Can you give one instance of when you were thoroughly shell shocked by the final output?`,
-      ` What do you think about the capability of AI in democratising and making art more accessible to all? Also what strategies do you think people should use to increase the amount of knowledge around AI-Art?`
+      ` What do you think about the capability of AI in democratising and making art more accessible to all? Also what strategies do you think people should use to increase the amount of knowledge around AI-Art?`,
+      `more123`
+
     ]
   },
   {
