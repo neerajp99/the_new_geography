@@ -22,7 +22,10 @@ const interview = [
   },
   {
     answers: [
-      "Any subject like art, cannot be discussed in a few sentences. Creativity and art is an integral part of life. Art and science are also inseparable. There have been many misnomers in our education. In Spite of all Artificial intelligence, a human being has to live and breathe natutrally. We in India, becoming and adapting artificially too soon, at the cost of naturalness. There's a simple expression,'how much and no more' a very potent expression can be applied to everything."
+      `Clearly such a statement gets one into a discussion about what Art is that is certainly hundreds if not thousands of years old. And it’ll get you quickly on very subjective slippery slopes.
+
+Even if a set of algorithms can produce nice looking paintings, images or sculptures, that still could just mean the artist is the one who created those algorithms, even if the ‘art bot’ has built up internal workings that are a black box to the creator or anyone else, and it ends up doing things humans could never do so well (I think there are quite a lot of examples of that happening). The problem with art is of course that even human beings and animals oftentimes make lousy art.
+`
     ]
   }
 ];

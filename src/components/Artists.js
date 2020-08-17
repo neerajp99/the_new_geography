@@ -72,7 +72,7 @@ function Artists() {
     "jatin",
     "ghiora",
     "jarett",
-    ""
+    "tjeerd"
   ];
 
   return (
