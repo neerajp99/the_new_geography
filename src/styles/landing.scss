@@ -79,6 +79,7 @@
             font-size: 15px;
           }
         }
+
         .bottom_line {
           width: 280px;
           text-align: left;
@@ -94,6 +95,17 @@
             top: -3.8vh;
             width: 255px;
           }
+        }
+        h6{
+            margin-top: 4%;
+            font-size: 1rem;
+            font-weight: 300;
+            span{
+                color: red;
+            }
+            @include media("<=phone") {
+              font-size: 0.8rem;
+            }
         }
         .paper_link {
           text-decoration: none !important;
