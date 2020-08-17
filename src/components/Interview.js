@@ -9,6 +9,7 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Footer from "./Footer";
+import {useLocation} from 'react-router-dom'
 // Import interview
 // import interview from "../utils/interviews/mario";
 
@@ -30,10 +31,14 @@ function Interview(props) {
   let tl = new TimelineLite({ delay: 1.8 });
   interview = require(`../utils/interviews/${props.match.params.id}`);
   console.log(props.match.params.id);
-  // useEffect(() => {
-  //   let vh = window.innerHeight * 0.01;
-  //   document.documentElement.style.setProperty("--vh", `${vh}px`);
-  // }, []);
+  const { pathname } = useLocation();
+
+  useEffect(
+    () => {
+      window.scrollTo(0, 0);
+    },
+    [pathname]
+  );
   useEffect(
     () => {
       // Images Vars
