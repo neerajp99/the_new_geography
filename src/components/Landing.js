@@ -141,7 +141,7 @@ const Landing = () => {
                   className="font-icon_2"
                 />
               </div>
-              <div className="about_content_part_middle">Philosopy</div>
+              <div className="about_content_part_middle">Philosophy</div>
               <div className="about_content_part_bottom">
                 This study involves an analysis and evaluation of how
                 philosophers would perceive AI Art and whether the AI art
