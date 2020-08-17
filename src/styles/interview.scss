@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700i&display=swap");
 .hero {
   visibility: hidden;
-  height: 100vh;
+  max-height: 100%;
   width: 100vw;
   overflow-x: hidden;
   @include media("<=phone") {

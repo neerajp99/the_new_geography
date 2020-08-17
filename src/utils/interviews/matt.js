@@ -1,5 +1,5 @@
 const imgBoy = require("../img/matt-art.jpg");
-const imgGirl = require("../img/matt.png");
+const imgGirl = require("../img/matt2.png");
 const interview = [
   {
     name: "Matt"

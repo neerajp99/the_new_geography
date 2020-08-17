@@ -10,9 +10,9 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Footer from "./Footer";
 // Import interview
-import interview from "../utils/interviews/mario";
+// import interview from "../utils/interviews/mario";
 
-// const interview = null
+let interview = null;
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100%"
@@ -23,16 +23,19 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function Interview() {
+function Interview(props) {
   let app = useRef(null);
   let images = useRef(null);
   let content = useRef(null);
-  let tl = new TimelineLite({ delay: 0.8 });
-
+  let tl = new TimelineLite({ delay: 1.8 });
+  interview = require(`../utils/interviews/${props.match.params.id}`);
+  console.log(props.match.params.id);
+  // useEffect(() => {
+  //   let vh = window.innerHeight * 0.01;
+  //   document.documentElement.style.setProperty("--vh", `${vh}px`);
+  // }, []);
   useEffect(
-    props => {
-      // interview =
-      console.log(props);
+    () => {
       // Images Vars
       const girlImage = images.firstElementChild; // or children[0]
       const boyImage = images.lastElementChild;
