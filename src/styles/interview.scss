@@ -212,15 +212,15 @@
         }
       }
       .makeStyles-heading-2 {
-        font-family: Avenir;
+        font-family: Avenir !important;
         font-size: 1.1rem !important;
-        font-weight: 600;
+        font-weight: 600 !important;
       }
       .MuiTypography-body1 {
         // font-size: 1.2rem;
         font-family: Avenir;
         @include media("<=phone") {
-          font-size: 0.9rem;
+          font-size: 0.9rem !important;
         }
       }
     }
