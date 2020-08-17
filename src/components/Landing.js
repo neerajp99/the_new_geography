@@ -9,6 +9,7 @@ import jatin from "../utils/img/jatin.png";
 import ghiora from "../utils/img/ghiora.png";
 import jarett from "../utils/img/jarett.png";
 import tjeerd from "../utils/img/tjeerd.png";
+import pdf from "./paper.pdf"
 import {
   faBrain,
   faLaptopCode,
@@ -44,7 +45,7 @@ const Landing = () => {
                 <br />
                 <h4> NEERAJ PANDEY & SUCHIR KALRA</h4>
                 <div className="bottom_line" />
-                <button className="all_button">Research Study</button>
+                <a href={pdf} target = "_blank" className="paper_link"><button className="all_button">Research Study</button></a>
               </div>
               <div className="landing_images">
                 <div className="images_flex">
