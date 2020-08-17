@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import Header from "./components/Header";
 import Landing from "./components/Landing";
@@ -17,10 +17,11 @@ function App() {
     <Router>
       <div className="App">
         <Header />
+        <Switch>
         <Route exact path="/" component={Landing} />
         <Route exact path="/artists" component={Artists} />
         <Route exact path="/interview/:id" component={Interview} />
-        <Route path="*" component={NotFound} />
+        <Route path="*" component={NotFound} /></Switch>
       </div>
     </Router>
   );
