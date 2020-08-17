@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import matt from "../utils/img/matt2.png";
 import mario from "../utils/img/mario.png";
 import kyle from "../utils/img/kyle.png";
-import roman from "../utils/img/roman.png";
+import roman from "../utils/img/roman2.jpeg";
 import tyler from "../utils/img/tyler.png";
 import patrick from "../utils/img/patrick.png";
 import jatin from "../utils/img/jatin.png";
