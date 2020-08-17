@@ -42,7 +42,7 @@ const Landing = () => {
                   A Technical, Sociological, Economics and Philosophical
                   Overview.
                 </h3>
-                <h6> <em><span>AIDAD</span> - Is AI 21st Century DADA Movement?</em></h6>
+                <h6> <em><span>AIDAD</span> - Is AI, The 21st Century DADA Movement?</em></h6>
                 <br />
                 <h4> NEERAJ PANDEY & SUCHIR KALRA</h4>
                 <div className="bottom_line" />
