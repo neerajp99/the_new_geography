@@ -50,58 +50,58 @@ const Landing = () => {
                 <div className="images_flex">
                   <div className="images_flex_img_one">
                     <div className="artist_image">
-                      <img src={matt} className="artist_image_img" />
+                      <img src={matt} className="artist_image_img" alt=""/>
                     </div>
                   </div>
                 </div>
                 <div className="images_flex">
                   <div className="images_flex_img_two">
                     <div className="artist_image">
-                      <img src={tjeerd} className="artist_image_img" />
+                      <img src={tjeerd} className="artist_image_img" alt=""/>
                     </div>
                   </div>
                   <div className="images_flex_img_one">
                     <div className="artist_image">
-                      <img src={mario} className="artist_image_img" />
+                      <img src={mario} className="artist_image_img" alt=""/>
                     </div>
                   </div>
                 </div>
                 <div className="images_flex">
                   <div className="images_flex_img_one">
                     <div className="artist_image">
-                      <img src={kyle} className="artist_image_img" />
+                      <img src={kyle} className="artist_image_img" alt=""/>
                     </div>
                   </div>
                   <div className="images_flex_img_two">
                     <div className="artist_image">
-                      <img src={jarett} className="artist_image_img" />
+                      <img src={jarett} className="artist_image_img" alt=""/>
                     </div>
                   </div>
                   <div className="images_flex_img_one">
                     <div className="artist_image">
-                      <img src={roman} className="artist_image_img" />
+                      <img src={roman} className="artist_image_img" alt=""/>
                     </div>
                   </div>
                 </div>
                 <div className="images_flex">
                   <div className="images_flex_img_two">
                     <div className="artist_image">
-                      <img src={jatin} className="artist_image_img" />
+                      <img src={jatin} className="artist_image_img" alt="" />
                     </div>
                   </div>
                   <div className="images_flex_img_one">
                     <div className="artist_image">
-                      <img src={tyler} className="artist_image_img" />
+                      <img src={tyler} className="artist_image_img" alt=""/>
                     </div>
                   </div>
                   <div className="images_flex_img_two">
                     <div className="artist_image">
-                      <img src={ghiora} className="artist_image_img" />
+                      <img src={ghiora} className="artist_image_img" alt=""/>
                     </div>
                   </div>
                   <div className="images_flex_img_one">
                     <div className="artist_image">
-                      <img src={patrick} className="artist_image_img" />
+                      <img src={patrick} className="artist_image_img" alt=""/>
                     </div>
                   </div>
                 </div>
@@ -205,7 +205,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div class="demo">
+      <div className="demo">
         <h1>Check out our interviews</h1>
         <p>AI / Generative Artists and Musicians</p>
         <Link to="/artists" className="interview_button">Check it out</Link>

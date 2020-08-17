@@ -26,7 +26,6 @@ function Interview() {
   let app = useRef(null);
   let images = useRef(null);
   let content = useRef(null);
-  let inter = useRef(null);
   let tl = new TimelineLite({ delay: 0.8 });
 
   useEffect(
@@ -157,7 +156,7 @@ function Interview() {
         </div>
       </div>
       <div className="interview_accordion">
-        <div className="container_el" ref={el => (inter = el)}>
+        <div className="container_el">
           <h2> Interview</h2>
           {la}
         </div>

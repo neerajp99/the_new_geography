@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import "./App.scss";
 import Header from "./components/Header";
 import Landing from "./components/Landing";
-import Testimonial from "./components/Testimonial";
 import Artists from "./components/Artists"
 import Interview from "./components/Interview"
 

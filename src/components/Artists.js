@@ -72,7 +72,7 @@ function Artists() {
   // Run scrollrender once page is loaded.
   useEffect(() => {
     requestAnimationFrame(() => skewScrolling());
-  }, []);
+  });
 
   //set the height of the body.
   useEffect(
@@ -117,14 +117,14 @@ function Artists() {
     <div ref={app} className="Artists">
       <div ref={scrollContainer} className="scroll">
         {images.map((image, index) => (
-          <>
+          <React.Fragment key={index}>
             <div key={index} className="img-container">
               <img src={image} alt={`people ${index}`} onClick={onClickImage}/>
             </div>
             <h2>
               {names[index]} <span className="outline">{surnames[index]}</span>
             </h2>
-          </>
+          </React.Fragment >
         ))}
       </div>
     </div>
