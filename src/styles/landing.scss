@@ -349,6 +349,9 @@
   -webkit-border-radius: 6px 6px 6px 6px;
   background-image: url(../utils/img/bg.svg);
   background-size: cover;
+  @include media("<=phone") {
+     margin-top: 15%;
+  }
   h1 {
     font-weight: 400;
     color: #fff;

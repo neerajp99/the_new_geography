@@ -60,7 +60,7 @@
             }
           }
           p {
-            font-size: 15px;
+            font-size: 14px;
             line-height: 24px;
             font-weight: 300;
             padding-right: 48px;
@@ -114,6 +114,7 @@
         width: 50%;
         height: 100vh;
         position: relative;
+        overflow: hidden;
         @include media("<=tablet") {
           width: 100%;
           overflow-x: hidden;
@@ -147,7 +148,7 @@
               @include media("<=tablet") {
                 width: 40%;
                 height: 45%;
-                bottom: -10%;
+                bottom: -20%;
               }
               @include media("<=phone") {
                 width: 48%;
@@ -212,13 +213,12 @@
       }
       .makeStyles-heading-2 {
         font-family: Avenir;
-        font-size: 1.2rem !important;
+        font-size: 1.1rem !important;
         font-weight: 600;
       }
       .MuiTypography-body1 {
-        // font-size: 1.1rem !important;
+        // font-size: 1.2rem;
         font-family: Avenir;
-        color: #504c4c;
         @include media("<=phone") {
           font-size: 0.9rem;
         }
