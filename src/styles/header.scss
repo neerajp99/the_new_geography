@@ -6,6 +6,11 @@
   // background: white;
   @include media("<=phone") {
     height: 96px;
+    background: white;
+    z-index: 9999999;
+  }
+  .headerContainer{
+      width: 95% !important;
   }
   .logo {
     a {

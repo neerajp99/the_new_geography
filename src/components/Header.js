@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div className="header">
-      <div className="container">
+      <div className="container headerContainer">
         <div className="row v-center space-between">
           <div className="logo">
-            <a href="/">DEB JR. </a>
+            <a href="/">AIDAD. </a>
           </div>
           <div className="nav">
             <span />

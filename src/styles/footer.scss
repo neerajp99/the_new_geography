@@ -1,0 +1,20 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background: black;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.18rem;
+  line-height: 70px;
+  box-shadow: 0 -6px 18px -10px rgba(5, 26, 21, 0.15);
+  @include media("<=phone") {
+    font-size: 15px;
+  }
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+}

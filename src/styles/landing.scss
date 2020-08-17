@@ -1,11 +1,21 @@
 .outer_landing {
-  height: calc(var(--vh, 1vh) * 200);
+  min-height: 120vh;
+  height: auto;
+  @include media("<=phone") {
+    // height: 310vh;
+  }
   .landing {
     // height: 50vh;
-    height: calc(var(--vh, 1vh) * 120);
-    background-color: white;
+    min-height: calc(var(--vh, 1vh) * 120);
+    height: auto;
+    background-color: #f9fafc;
     width: 100%;
     z-index: 10;
+    @include media("<=tablet") {
+    }
+    @include media("<=phone") {
+      min-height: 0vh;
+    }
     .row {
       display: flex;
       justify-content: center;
@@ -20,13 +30,16 @@
       .landing_content {
         width: 40%;
         left: 0;
+
         @include media("<=tablet") {
           width: 100%;
-          height: calc(var(--vh, 1vh) * 50);
+          min-height: calc(var(--vh, 1vh) * 50);
+          height: auto;
         }
         @include media("<=phone") {
           width: 100%;
-          height: calc(var(--vh, 1vh) * 50);
+          min-height: calc(var(--vh, 1vh) * 50);
+          height: auto;
         }
         h2 {
           font-size: 4rem;
@@ -35,24 +48,36 @@
           z-index: 10;
           margin-top: 30%;
           color: white;
+          text-align: left;
           mix-blend-mode: difference;
           @include media("<=tablet") {
-            font-size: 2.4rem;
+            margin-top: 20%;
+            font-size: 2.9rem;
             line-height: 3rem;
           }
           @include media("<=phone") {
-            margin-top: 72px;
-            font-size: 1.7rem;
-            line-height: 2.2rem;
+            margin-top: 40%;
+            font-size: 2.6rem;
+            line-height: 3rem;
           }
         }
         h3 {
           font-size: 20px;
           width: 80%;
-          line-height: 30px;
+          line-height: 35px;
+          @include media("<=tablet") {
+          }
+          @include media("<=phone") {
+            font-size: 16px;
+          }
         }
         h4 {
           font-weight: 400;
+          @include media("<=tablet") {
+          }
+          @include media("<=phone") {
+            font-size: 15px;
+          }
         }
         .bottom_line {
           width: 280px;
@@ -62,6 +87,12 @@
           opacity: 0.4;
           position: relative;
           top: -2.8%;
+          @include media("<=tablet") {
+          }
+          @include media("<=phone") {
+            position: relative;
+            top: -3.8vh;
+          }
         }
         .all_button {
           display: flex;
@@ -91,11 +122,17 @@
             -webkit-transition: 0.3s all ease-in-out;
             transform: translateY(-3px);
           }
+          @include media("<=phone") {
+            width: 260px;
+            height: 50px;
+            font-size: 15px;
+            margin-bottom: 10%;
+          }
         }
       }
 
       .landing_images {
-        width: 47%;
+        width: 50%;
         right: 0;
         // height: 90%;
         // margin: 0 auto;
@@ -106,10 +143,14 @@
         @include media("<=tablet") {
           width: 100%;
           height: calc(var(--vh, 1vh) * 50);
+          // display: none;
+          // visibility: none;
         }
         @include media("<=phone") {
           width: 100%;
-          height: calc(var(--vh, 1vh) * 50);
+          height: 60%;
+          // display: none;
+          // visibility: none;
         }
         .images_flex {
           display: flex;
@@ -119,6 +160,9 @@
           .images_flex_img_one {
             height: 28vh;
             width: 100%;
+            @include media("<=phone") {
+              height: 20vh;
+            }
             // background: black;
             .artist_image {
               height: 92%;
@@ -148,6 +192,9 @@
           .images_flex_img_two {
             height: 20vh;
             width: 100%;
+            @include media("<=phone") {
+              height: 15vh;
+            }
             // background: black;
             .artist_image {
               height: 90%;
@@ -177,81 +224,151 @@
       }
     }
   }
-  .about {
-    width: 100%;
-    height: calc(var(--vh, 1vh) * 70);
-    position: absolute;
-    top: 100vh;
-    z-index: 5;
-    font-family: 'Montserrat', serif !important;
-    color: #2e2e2e;
-    @include media("<=tablet") {
-      position: relative;
-      top: 50vh;
-    }
-    @include media("<=phone") {
-      position: relative;
-      top: 50vh;
-    }
-    .row {
+}
+.about {
+  width: 100%;
+  min-height: 100%;
+  height: auto !important;
+  position: relative;
+  top: -20vh;
+  z-index: 5;
+  font-family: "Avenir", serif !important;
+  color: #2e2e2e;
+  // background: red;
+  @include media("<=tablet") {
+    position: relative;
+    top: 2vh;
+  }
+  @include media("<=phone") {
+    position: relative;
+    top: 2vh;
+    height: 150vh !important;
+  }
+
+  .about_container {
+    width: 88%;
+    margin: 0 auto;
+
+    .about_content {
+      height: 50%;
+      width: 91%;
+      margin: 0 auto;
       display: flex;
-      justify-content: center;
-      position: relative;
-      flex-direction: column;
+      flex-direction: row;
+      margin-top: 4%;
       @include media("<=tablet") {
+        width: 100%;
+        height: 50%;
         flex-direction: column;
       }
       @include media("<=phone") {
+        width: 100%;
+        height: 50%;
         flex-direction: column;
       }
-      .about_content {
-        height: 50%;
-        width: 91%;
-        margin: 0 auto;
+      .about_content_part {
+        width: 30.333%;
+        height: 25vh;
+        // margin-top: 5%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        // background: #9c9c9c;
+        padding: 15px;
+        border-radius: 12px;
         @include media("<=tablet") {
-          width: 100%;
-          height: calc(var(--vh, 1vh) * 50);
-          flex-direction: column;
+          width: 90%;
+          margin: 0 auto;
         }
         @include media("<=phone") {
-          width: 100%;
-          height: calc(var(--vh, 1vh) * 50);
-          flex-direction: column;
+          width: 90%;
+          margin: 0 auto;
         }
-        .about_content_part {
-          width: 33.333%;
-          height: 100%;
-          margin-top: 3%;
-          display: flex;
-          flex-direction: column;
-          @include media("<=tablet") {
-            width: 100%;
+        .about_content_part_top {
+          height: 30%;
+          width: 90%;
+          margin-top: 8%;
+          #font-icon {
+            font-size: 1.5em;
+            color: #000;
           }
+          // .font-icon_1 {
+          //
+          //   color: #14cf66;
+          // }
+          // .font-icon_2 {
+          //   color: #ff90ac;
+          // }
+          // .font-icon_3 {
+          //   color: #8666f0;
+          // }
+          // .font-icon_4 {
+          //   color: #3564ff;
+          // }
+          // .font-icon_5 {
+          //   color: #fee697;
+          // }
+        }
+        .about_content_part_middle {
+          height: 20%;
+          width: 90%;
+          font-weight: 500;
+          font-size: 1.3rem;
+          color: #3c4758;
+        }
+        .about_content_part_bottom {
+          height: 50%;
+          width: 90%;
+          // font-size: 0.85rem;
+          // line-height: 20px;
+          font-size: 14px;
+          color: #59687d;
+          font-weight: 500;
+          line-height: 22px;
           @include media("<=phone") {
             width: 100%;
-          }
-          .about_content_part_top {
-            height: 30%;
-            width: 90%;
-            margin-top: 8%;
-            #font-icon{
-                font-size: 1.5em;
-            }
-          }
-          .about_content_part_middle {
-            height: 20%;
-            width: 90%;
-            font-weight: 500;
-          }
-          .about_content_part_bottom {
-            height: 50%;
-            width: 90%;
-            font-size: 14px;
           }
         }
       }
     }
+  }
+}
+.demo {
+  max-width: 960px;
+  padding: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  background-color: #0c0c10;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(132, 146, 166, 0.1);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(132, 146, 166, 0.1);
+  box-shadow: 0px 4px 4px 0px rgba(132, 146, 166, 0.1);
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  background-image: url(../utils/img/bg.svg);
+  background-size: cover;
+  h1 {
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #e5defc;
+    margin-bottom: 30px;
+  }
+  .interview_button {
+    padding: 14px 22px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    background-color: #fff;
+    color: #0c0c10;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
   }
 }
