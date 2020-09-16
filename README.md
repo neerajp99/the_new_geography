@@ -1,68 +1,47 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## AI Generative Art and Perspectives 
+AIDAD - Is AI, The 21st Century DADA Movement?
+``` A Technical, Sociological, Economics and Philosophical Overview. ```
 
-## Available Scripts
+## Aspects covered
 
-In the project directory, you can run:
+``` Technical Aspects ```
+The science, technology, geometry and background to Artificial Intelligence and Art. The study aims to reflect upon the works of generative design, generative algorithm, Julia sets, Mandelbrot sets and a lot more. In addition, we explore various definitions of creativity.
 
-### `yarn start`
+``` Philisophy ```
+This study involves an analysis and evaluation of how philosophers would perceive AI Art and whether the AI art movement mirrors the early 1900s Dada Movement. In addition, an analysis of the industrial revolution and Futurist art leads us to the reasoning of how AI art might have originated in the first place.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+``` Economics ```
+A study of the market and Art collectors along with a behaviour analysis of how people perceive art. And a comparative market study between AI art and Non-Art markets. In addition, the impacts on the Job market and the short run/long run consequences of AI in the Art world have been made. And the question of AI art being the next big Ghost work has been evaluated.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+``` Sociology ```
+A study of democratization of art and how AI art could make art more accessible to various sectors of society.
 
-### `yarn test`
+``` Interviews and Surveys ```
+Interviews with several AI and non-AI artists from across the field of Art and Design have been conducted from the month from July to August to evaluate the market, reflect upon technology behind AI and what they feel about their work. In addition, surveys across the University community were conducted to ascertain certain psychological perceptions.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Artists Interviewed
 
-### `yarn build`
+> [**Mario Klingemann**](http://quasimondo.com/) 
+>  [**Roman Lipski**](http://www.romanlipski.com/) 
+>  [**Tyler Hobbs**](https://tylerxhobbs.com/)
+>  [**Matt Deslauriers**](https://mattdesl.com/) 
+>  [**Patrick Borgeat**](http://www.cappel-nord.de/b/) 
+>  [**Kyle McDonald**](http://kylemcdonald.net/) 
+>  [**Jatin Das**](https://en.wikipedia.org/wiki/Jatindra_Nath_Das)
+>  [**Tjeerd Hoek**](https://www.linkedin.com/in/tjeerdh?originalSubdomain=nl) 
+>  [**Ghiora Aharoni**](https://ghiora-aharoni.com/) 
+>  [**Jarett Webb**](https://www.linkedin.com/in/byjarrett/)
+>  P.S: Compilation of interviews is still under progress.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Contributors 
+> Neeraj Pandey ([Twitter](https://twitter.com/neerajp99))
+> Suchir Kalra ([Twitter](https://twitter.com/PixelatedSuchir))
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Paper 
+> The Research study paper has been added to the website only. For direct download: [Link](https://elated-gates-80505b.netlify.app/static/media/paper.88b44e71.pdf)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
