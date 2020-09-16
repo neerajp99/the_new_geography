@@ -21,16 +21,26 @@ Interviews with several AI and non-AI artists from across the field of Art and D
 
 ### Artists Interviewed
 
-> [**Mario Klingemann**](http://quasimondo.com/) 
+> [**Mario Klingemann**](http://quasimondo.com/)
+
 >  [**Roman Lipski**](http://www.romanlipski.com/) 
+
 >  [**Tyler Hobbs**](https://tylerxhobbs.com/)
+
 >  [**Matt Deslauriers**](https://mattdesl.com/) 
->  [**Patrick Borgeat**](http://www.cappel-nord.de/b/) 
+
+>  [**Patrick Borgeat**](http://www.cappel-nord.de/b/)
+
 >  [**Kyle McDonald**](http://kylemcdonald.net/) 
+
 >  [**Jatin Das**](https://en.wikipedia.org/wiki/Jatindra_Nath_Das)
+
 >  [**Tjeerd Hoek**](https://www.linkedin.com/in/tjeerdh?originalSubdomain=nl) 
+
 >  [**Ghiora Aharoni**](https://ghiora-aharoni.com/) 
+
 >  [**Jarett Webb**](https://www.linkedin.com/in/byjarrett/)
+
 >  P.S: Compilation of interviews is still under progress.
 
 ### Contributors 
